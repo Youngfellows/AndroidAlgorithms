@@ -8,6 +8,7 @@ import android.view.View;
 import com.papaya.algorithms.list.ArrayList;
 import com.papaya.algorithms.list.LinkedList;
 import com.papaya.algorithms.list2.Array;
+import com.papaya.algorithms.list2.Queue;
 import com.papaya.algorithms.list2.Stack;
 
 public class MainActivity extends AppCompatActivity {
@@ -151,5 +152,24 @@ public class MainActivity extends AppCompatActivity {
             Log.i(TAG, "stack.size(): " + stack.size() + " ,弹出: " + stack.nodePop() + "");
         }
         Log.i(TAG, stack + "");
+    }
+
+
+    /**
+     * 测试队列
+     *
+     * @param view
+     */
+    public void testQueue(View view) {
+        Queue queue = new Queue();
+        queue.addNodeQueue("123");
+        queue.addNodeQueue("abc");
+//        queue.addNodeQueue("ddd");
+        Log.i(TAG, queue + "");
+        Log.i(TAG, "移除: " + queue.removeNodeQueue());
+        Log.i(TAG, queue + "");
+//        queue.removeNodeQueue();
+//        queue.removeNodeQueue();
+//        Log.i(TAG, queue + "");
     }
 }
