@@ -40,6 +40,12 @@
             android:layout_height="wrap_content"
             android:onClick="testQueue"
             android:text="队列" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="testLinkedList"
+            android:text="链表" />
     </LinearLayout>
 
 

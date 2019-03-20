@@ -172,4 +172,25 @@ public class MainActivity extends AppCompatActivity {
 //        queue.removeNodeQueue();
 //        Log.i(TAG, queue + "");
     }
+
+    /**
+     * 链表
+     *
+     * @param view
+     */
+    public void testLinkedList(View view) {
+        com.papaya.algorithms.list2.LinkedList linkedList = new com.papaya.algorithms.list2.LinkedList();
+        linkedList.addHead("123");
+        linkedList.addHead("abc");
+        linkedList.addHead("%$$");
+        linkedList.addTail("+_+");
+        linkedList.addTail("hello");
+        linkedList.addTail("word");
+        linkedList.display();
+        linkedList.deleteHead();
+        linkedList.display();
+        linkedList.deleteTail();
+        linkedList.display();
+
+    }
 }
