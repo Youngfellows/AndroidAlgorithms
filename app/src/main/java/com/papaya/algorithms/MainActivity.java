@@ -7,6 +7,8 @@ import android.view.View;
 
 import com.papaya.algorithms.list.ArrayList;
 import com.papaya.algorithms.list.LinkedList;
+import com.papaya.algorithms.list2.Array;
+import com.papaya.algorithms.list2.Stack;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -83,5 +85,71 @@ public class MainActivity extends AppCompatActivity {
                 Log.i(TAG, "JDK linkedList add time---->" + (slEndTime - slBeginTime));
             }
         }).start();
+    }
+
+    /**
+     * 测试数组
+     *
+     * @param view
+     */
+    public void testArray(View view) {
+        Array array = new Array(10);
+        array.add(6);
+        array.add(3);
+        array.add(8);
+        array.add(2);
+        array.add(11);
+        array.add(5);
+        array.add(7);
+        array.add(4);
+        array.add(9);
+        array.add(10);
+
+//        array.bubbleSort();
+//        array.selectSort();
+        array.insertSort();
+//        array.display();
+//        System.out.println(array.find(4));
+//        System.out.println(array.delete(1));
+//        array.display();
+//        System.out.println(array.update(2,6));
+//        array.display();
+    }
+
+    /**
+     * 栈
+     *
+     * @param view
+     */
+    public void testStack(View view) {
+
+//        Stack stack = new Stack(1);
+//        stack.objPush("abc");
+//        stack.objPush(123);
+//        stack.objPush("de");
+//        stack.objPush("cd");
+//        stack.objPush("er");
+//        stack.objPush("hello");
+//        stack.objPush(666);
+//        stack.objPush(545);
+//        stack.objPush("word");
+//
+//        Log.i(TAG, "查找栈顶: " + stack.peekTop() + "");
+//        while (stack.top() != -1) {
+//            Log.i(TAG, "弹出: " + stack.objPop() + "");
+//        }
+//        Log.i(TAG, stack + "");
+
+        Stack stack = new Stack();
+        stack.nodePush("111");
+        stack.nodePush("222");
+        stack.nodePush("aaa");
+        stack.nodePush("bbb");
+        Log.i(TAG, stack + "");
+
+        while (stack.size() >= 1) {
+            Log.i(TAG, "stack.size(): " + stack.size() + " ,弹出: " + stack.nodePop() + "");
+        }
+        Log.i(TAG, stack + "");
     }
 }

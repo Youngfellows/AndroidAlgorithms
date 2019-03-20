@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.papaya.algorithms.MainActivity">
 
     <LinearLayout
@@ -17,5 +18,23 @@
             android:text="测试自己实现的ArrayList类和Linkedlist类添加30000个数据所需要的时间 " />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="testArray"
+            android:text="数组(列表)" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="testStack"
+            android:text="栈" />
+    </LinearLayout>
+
 
 </LinearLayout>
